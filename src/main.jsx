@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import "@fontsource/poppins"; // Defaults to weight 400
 import "@fontsource/poppins/400.css"; // Specify weight
 import "@fontsource/poppins/400-italic.css"; // Specify weight and style
-import { StoreContext } from "./context/ContextApi.jsx";
+import { StoreContext } from "./Context/ContextApi.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

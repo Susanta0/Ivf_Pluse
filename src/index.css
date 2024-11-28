@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins";
+  background-color: #FCFAF5;
+}
+
+.radio-input,
+.checkbox {
+  appearance: none; /* Remove default styles */
+  border: 2px solid #f48265; /* Default border color */
+  cursor: pointer;
+  position: relative;
+} 
+
+.checkbox:checked {
+  background-color: #f48265; /* Checked background color */
+  border-color: #f48265; /* Optional: Change border color on check */
+}
+.radio-input:checked::after {
+  content: "";
+  width: 10px; /* Adjust size for the inner circle */
+  height: 10px;
+  background-color: #f48265;
+  border-radius: 50%; /* Keep it circular */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox:checked::after {
+  content: "✔";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-input:checked + .text {
+  font-weight: 600;
+  opacity: 100%;
+}
+.checkbox:checked + .text {
+  font-weight: 600;
+  opacity: 100%;
+}

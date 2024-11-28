@@ -38,7 +38,7 @@ const Result = () => {
           </p>
         </div>
 
-        <div className="flex laptop:items-center mobile:items-center mobile:flex-col laptop:mt-0 mobile:mt-10">
+        <div className="flex laptop:items-center mobile:items-center mobile:flex-col mobile:gap-20 laptop:mt-0 mobile:mt-10">
           <div className="">
             <svg
               className="laptop:absolute laptop:top-[406px] laptop:left-[316px] rounded-full mobile:w-[188px] mobile:h-[188px]"
@@ -95,15 +95,32 @@ const Result = () => {
 
           {/* couple image */}
           <div className="">
-            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:top-[461px] mobile:left-[77px]"></span>
+            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:top-[561px] mobile:left-[107px]"></span>
             <img
-              className="object-contain laptop:absolute laptop:left-[608px] laptop:top-[239px]"
+              className="object-contain laptop:absolute laptop:left-[608px] laptop:top-[239px]
+              "
               src={couple}
               alt="couple"
             />
           </div>
         </div>
+
+
+
+      <div className="w-full h-[96px] absolute flex justify-center items-center rounded-bl-2xl rounded-br-2xl bg-[#FFFFFF33]">
+
+      <button
+        
+          className="w-[257px] h-[52px] bg-[#D75555] rounded-[8px] text-[16px] font-medium text-[#FFFFFF]
+          "
+        >
+          Start private consultation&nbsp; →
+        </button>
       </div>
+
+
+      </div>
+
     </>
   );
 };

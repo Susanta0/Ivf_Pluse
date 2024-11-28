@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      blur: {
+      blur: { 
         100: '100px', // Add custom blur value
       },
     },

@@ -107,10 +107,9 @@ const Result = () => {
 
 
 
-      <div className="w-full h-[96px] absolute flex justify-center items-center rounded-bl-2xl rounded-br-2xl bg-[#FFFFFF33]">
+      <div className="w-full h-[96px] sticky flex mt-[4.5em] justify-center items-center rounded-bl-2xl rounded-br-2xl bg-[#FFFFFF33]">
 
       <button
-        
           className="w-[257px] h-[52px] bg-[#D75555] rounded-[8px] text-[16px] font-medium text-[#FFFFFF]
           "
         >

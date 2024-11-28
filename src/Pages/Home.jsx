@@ -278,7 +278,7 @@ const Home = () => {
         
           onClick={calculatePercentage}
           className="w-[147px] h-[47px] bg-[#D75555] rounded-[6px] text-[16px] font-medium text-[#FFFFFF] m-auto laptop:bottom-22 desktop:bottom-20 mobile:mt-10
-           mobile:fixed mobile:bottom-10 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2 mobile:z-10  
+           mobile:fixed mobile:bottom-6 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2 mobile:z-10  
          
           "
         >

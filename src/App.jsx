@@ -22,7 +22,7 @@ function App() {
       <div className='laptop:px-[120px] mobile:px-[20px] flex items-center gap-[15px] laptop:pt-[125px] mobile:pt-[97px]'>
           <p className={`text-[#1E231E] font-medium text-base mobile:hidden laptop:flex ${status && 'text-[#FFFFFF] font-normal'}`}>Home</p>
       <p className={`text-[#000000] font-medium text-base mobile:hidden laptop:flex ${status && 'text-[#FFFFFF] font-normal'}`}>/</p>
-      <BsArrowLeft className=' mobile:flex laptop:hidden laptop:text-black mobile:text-white'/>
+      <BsArrowLeft className={`mobile:flex laptop:hidden  ${status ? 'mobile:text-white': 'laptop:text-black '}`}/>
           <Link to="/" onClick={resetData} className={`text-[#1E231E] laptop:text-base mobile:text-[18px] ${status ? 'text-[#FFFFFF] font-normal' : 'font-semibold'}`}>IVF Success Rate Calculator</Link>
           {status && <Link className='text-[#FFFFFF] font-semibold text-base mobile:hidden laptop:flex'>/ &nbsp; Result</Link> }
           

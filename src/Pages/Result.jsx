@@ -28,10 +28,18 @@ const Result = () => {
   `;
   return (
     <>
-      <div className=" mobile:w-full mobile:h-[800px] bg-[#303030]">
+      <div className=" mobile:w-full mobile:h-fit bg-[#303030]">
         <div className="flex items-center gap-x-6 laptop:mt-16 mobile:mt-6">
-          <img src={line} alt="line_logo" className="mobile:hidden laptop:flex" />
-          <img src={line2} alt="line_logo" className="mobile:flex laptop:hidden"/>
+          <img
+            src={line}
+            alt="line_logo"
+            className="mobile:hidden laptop:flex"
+          />
+          <img
+            src={line2}
+            alt="line_logo"
+            className="mobile:flex laptop:hidden"
+          />
 
           <p className="font-medium laptop:text-[44px] mobile:text-[16px] text-[#FFFFFF]">
             Your estimated IVF Success Rate is
@@ -41,7 +49,7 @@ const Result = () => {
         <div className="flex laptop:items-center mobile:items-center mobile:flex-col mobile:gap-20 laptop:mt-0 mobile:mt-10">
           <div className="">
             <svg
-              className="laptop:absolute laptop:top-[406px] laptop:left-[316px] rounded-full mobile:w-[188px] mobile:h-[188px]"
+              className="laptop:absolute laptop:top-[406px] laptop:left-[316px] rounded-full laptop:h-[293.09px] laptop:w-[293.09px] mobile:w-[188px] mobile:h-[188px]"
               width="293.09"
               height="293.09"
               viewBox="0 0 293.09 293.09"
@@ -95,7 +103,7 @@ const Result = () => {
 
           {/* couple image */}
           <div className="">
-            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:top-[561px] mobile:left-[107px]"></span>
+            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:left-1/2 mobile:transform mobile:-translate-x-1/2 mobile:z-10 "></span>
             <img
               className="object-contain laptop:absolute laptop:left-[608px] laptop:top-[239px]
               "
@@ -105,21 +113,17 @@ const Result = () => {
           </div>
         </div>
 
-
-
-      <div className="w-full h-[96px] sticky flex mt-[4.5em] justify-center items-center rounded-bl-2xl rounded-br-2xl bg-[#FFFFFF33]">
-
-      <button
-          className="w-[257px] h-[52px] bg-[#D75555] rounded-[8px] text-[16px] font-medium text-[#FFFFFF]
+        <div className="w-full h-[96px] sticky flex mt-[4.5em] justify-center items-center rounded-bl-2xl rounded-br-2xl bg-[#FFFFFF33]
+        laptop:hidden mobile:flex
+        ">
+          <button
+            className="w-[257px] h-[52px] bg-[#D75555] rounded-[8px] text-[16px] font-medium text-[#FFFFFF]
           "
-        >
-          Start private consultation&nbsp; →
-        </button>
+          >
+            Start private consultation&nbsp; →
+          </button>
+        </div>
       </div>
-
-
-      </div>
-
     </>
   );
 };

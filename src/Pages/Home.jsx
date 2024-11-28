@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { Box, Slider, styled, createTheme, ThemeProvider, useMediaQuery} from "@mui/material";
-import { AuthContext } from "../context/ContextApi";
+import { AuthContext } from "../Context/ContextApi";
 
 
 const theme = createTheme({

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import AllRoutes from './Routes/AllRoutes'
-import { AuthContext } from './context/ContextApi'
+import { AuthContext } from './Context/ContextApi'
 import { Link } from 'react-router-dom'
 import { BsArrowLeft } from "react-icons/bs";
 

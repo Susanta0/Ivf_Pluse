@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AuthContext } from "../context/ContextApi";
+import { AuthContext } from "../Context/ContextApi";
 import line from "/Group 1000002382.png";
 import line2 from "/Group 1000002391.png";
 import couple from "/black-white-portrait-woman-expecting-baby (3).png";

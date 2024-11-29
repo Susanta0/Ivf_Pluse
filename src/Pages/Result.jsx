@@ -32,7 +32,7 @@ const Result = () => {
         <div className="flex items-center gap-x-6 laptop:mt-16 mobile:mt-6">
           <img
             src={line}
-            alt="line_logo"
+            alt="line_logo" 
             className="mobile:hidden laptop:flex"
           />
           <img
@@ -103,7 +103,7 @@ const Result = () => {
 
           {/* couple image */}
           <div className="">
-            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:left-1/2 mobile:transform mobile:-translate-x-1/2 mobile:z-10 "></span>
+            <span className="laptop:h-[410px] laptop:w-[410px] mobile:h-[197px] mobile:w-[197px] bg-[#3E9E51] blur-[100px] laptop:absolute laptop:top-[255px] laptop:left-[1038px] mobile:absolute mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"></span>
             <img
               className="object-contain laptop:absolute laptop:left-[608px] laptop:top-[239px]
               "

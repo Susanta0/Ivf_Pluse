@@ -15,6 +15,7 @@ function App() {
     <>
       <div className={`
          desktop:w-[1728px] desktop:h-[993px]
+         laptop:w-[1728px] laptop:h-[993px]
          mobile:h-[879px]
          mobile:w-full  ${status? 'bg-[#303030]':'bg-[#FCFAF5]'}`}>
         <Navbar/>

@@ -3,6 +3,8 @@ import logo from "../../public/ivf-pulse-logo.png"
 import { Link } from 'react-router-dom'
 import { GoArrowRight } from "react-icons/go";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
+
 
 const navData=[
     {id:1, title:"Donor Programme", link:""},
@@ -22,8 +24,7 @@ const Navbar = () => {
   return (
    <>
    <nav className='fixed z-10 border-b border-[#E6E3D2] bg-[#FFFFFF] 
-   desktop:w-full desktop:h-[85px] 
-     desktop:px-[120px] 
+   desktop:w-full desktop:h-[85px] desktop:px-[120px] 
    mobile:px-[20px] mobile:h-[80px] mobile:w-full
    flex justify-between'>
     <img src={logo} alt="ivf_pulse_logo" className='
@@ -36,7 +37,7 @@ const Navbar = () => {
     // laptop:flex
     // mobile:hidden
     // '
-    className={`items-center desktop:gap-x-[36px] mobile:gap-x-[14px] 
+    className={`items-center desktop:gap-x-[30px] mobile:gap-x-[14px] 
         laptop:flex
         mobile:${menuOpen ? 'block absolute laptop:static top-[80px] left-0 w-full bg-white px-5' : 'hidden'}
         
@@ -55,7 +56,20 @@ const Navbar = () => {
         <GoArrowRight className='text-[#FFFFFF]'/>
     </button>
     </ul>
-        <GiHamburgerMenu className='h-[24px] w-[24px] laptop:hidden mt-[28px] ' onClick={toggleMenu}/>
+
+        {/* <GiHamburgerMenu className='h-[24px] w-[24px] laptop:hidden mt-[28px] ' onClick={toggleMenu}/>
+        <RxCross2 className='h-[24px] w-[24px] laptop:hidden mt-[28px] '/> */}
+        {menuOpen ? (
+                    <RxCross2
+                        className='h-[24px] w-[24px] laptop:hidden mt-[28px]'
+                        onClick={toggleMenu}
+                    />
+                ) : (
+                    <GiHamburgerMenu
+                        className='h-[24px] w-[24px] laptop:hidden mt-[28px]'
+                        onClick={toggleMenu}
+                    />
+                )}
    </nav>
    </>
   )
